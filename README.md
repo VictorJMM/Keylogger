@@ -22,7 +22,20 @@ Este Keylogger foi feito para fins de estudo. Para ser um keylogger realmente ef
   cd servidor
   python servidor.py
   ```
-### Compilar o cliente
+### baixar o compilador e Compilar o cliente
+- baixar o [gcc](https://gcc.gnu.org/) (Windows)
+- baixar o gcc(Linux ubuntu)
+  ```bash
+  sudo apt update
+  sudo apt install build-essential
+  gcc --version
+  ```
+- baixar o gcc(Linux Arch Linux)
+  ```bash
+  sudo pacman -S base-devel
+  gcc --version
+  ```
+- compilar o main.cpp
   ```bash
   cd Keylogger
   g++ main.cpp -o main.exe -mwindows -static -lws2_32
